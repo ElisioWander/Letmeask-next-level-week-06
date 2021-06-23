@@ -1,0 +1,166 @@
+#page-auth {
+    height: 100vh;
+
+    display: flex;
+    align-items: stretch;
+
+    aside {
+        flex: 7;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 120px 88px;
+
+        color: #FFF;
+        background-color: #835AFD;
+
+        img {
+            max-width: 320px;
+        }
+
+        strong {
+            font: 700 36px 'Poppins', sans-serif;
+            line-height: 42px;
+            
+            margin-top: 16px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 32px;
+
+            margin-top: 16px;
+
+            color: #F8F8F8;
+        }
+    }
+
+    main {
+        flex: 8;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 32px;
+    }
+
+    .main-content {
+        width: 100%;
+        max-width: 320px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        text-align: center;
+
+        > img {
+            align-self: center;
+        }
+
+        h2 {
+            margin: 64px 0 24px;
+
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form {
+            input {
+                height: 50px;
+                padding: 0 16px;
+
+                border: solid 1px #A8A8B3;
+                border-radius: 8px;
+
+                background-color: #FFF;
+            }
+
+            button {
+                margin-top: 16px;
+            }
+
+            button, input {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin-top: 16px;
+
+            font-size: 14px;
+
+            color: #737380;
+
+            a{
+                color: #E559F9;
+            }
+        }
+    }
+
+    .create-room {
+        height: 50px;
+
+        margin-top: 64px;
+
+        border: 0;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        font-weight: 500;
+
+        color: #FFF;
+        background-color: #EA4335;
+
+        transition: filter 200ms;
+
+        img {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+
+    }
+
+    .separator {
+        margin: 32px 0;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 14px;
+        color: #A8A8B3;
+
+        &::before {
+            content: '';
+            height: 1px;
+
+            flex: 1;
+
+            margin-right: 16px;
+            
+            background-color: #A8A8B3;
+        }
+
+        &::after {
+            content: '';
+            height: 1px;
+
+            flex: 1;
+
+            margin-left: 16px;
+
+            background-color: #A8A8B3;
+        }
+    }
+}
