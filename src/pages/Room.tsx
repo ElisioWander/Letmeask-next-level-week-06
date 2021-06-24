@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react'
+import { useState, FormEvent, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Button } from '../Components/Button'
 import { RoomCode } from '../Components/RoomCode'
@@ -20,14 +20,24 @@ export function Room() {
 
     const roomId = params.id
 
+    // useEffect(() => {
+    //     const roomRef = database.ref(`rooms/${roomId}`)
+
+    //     roomRef.once('value', room => {
+
+    //     })
+
+    //     console.log(roomId)
+    // }, [roomId])
+
     function handleSendQuestion(event: FormEvent) {
         event.preventDefault()
 
-        if(newQuestion.trim() === '') {
-            return 
+        if (newQuestion.trim() === '') {
+            return
         }
 
-        if(!user) {
+        if (!user) {
             throw new Error('You must be logged in')
         }
 
@@ -51,7 +61,7 @@ export function Room() {
             <header>
                 <div className="content">
                     <img src={logoImg} alt="Letmeask" />
-                    <RoomCode code={roomId}/>
+                    <RoomCode code={roomId} />
                 </div>
             </header>
 
@@ -76,7 +86,7 @@ export function Room() {
                             </div>
                         ) : (
                             <span>Para enviar uma pergunta, <button>faça seu login</button>,</span>
-                        ) }
+                        )}
 
                         <Button type="submit" disabled={!user}>
                             Enviar pergunta
