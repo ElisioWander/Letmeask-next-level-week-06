@@ -1,5 +1,5 @@
 .button {
-    height: 50px;
+    height: 40px;
 
     padding: 0 16px;
 
@@ -18,6 +18,13 @@
     background-color: #835AFD;
 
     transition: filter 200ms;
+
+    &.outlined {
+        border: solid 1px #835AFD;
+
+        color: #835AFD;
+        background-color: #FFF;
+    }
 
     &:not(:disabled):hover {
         filter: brightness(0.9);
