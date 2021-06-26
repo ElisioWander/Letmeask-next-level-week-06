@@ -10,6 +10,14 @@
         margin-top: 8px;
     }
 
+    & .answered {
+
+    }
+
+    &.highlighted {
+      
+    }
+
     p {
         color: #29292E;
     }
@@ -39,6 +47,11 @@
               
               color: #737380;
             }
+          }
+
+          > div {
+            display: flex;
+            gap: 16px;
           }
 
           button {
