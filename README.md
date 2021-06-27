@@ -50,7 +50,7 @@ localhost:3000
 
 ---
 ## 📝 Licença
-Copyright © 2020 [@ElisioWander](https://github.com/ElisioWander/-ecoleta-next-level-week-01/blob/master/LICENSE)
+Copyright © 2020 [@ElisioWander](https://github.com/ElisioWander/-Letmeask-next-level-week-06/blob/master/LICENSE)
 
 Este projeto está sobe a [LICENÇA MIT](https://opensource.org/licenses/MIT)
 
