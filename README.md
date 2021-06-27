@@ -8,7 +8,7 @@
 </h1>
 
 ## 🏷️ Sobre 
-**Letmeask** é uma aplicação desenvolvida para facilitar a comunicação entre criadores de conteúdo e o seu público atravez de salas de Q&A, uma forma mais organizada e democrática de fazer essa intermediação. O projeto foi desenvolvido durante a sexta edição do evento Next Level Week(**trilha React**), feito pela 🚀[Rocketseat](https://rocketseat.com.br/) e ministrado pelo professor [Diego Fernandes](https://github.com/diego3g).
+**Letmeask** é uma aplicação desenvolvida para facilitar a comunicação entre criadores de conteúdo e o seu público atravéz de salas de Q&A, uma forma mais organizada e democrática de fazer essa intermediação. O projeto foi desenvolvido durante a sexta edição do evento Next Level Week(**trilha React**), feito pela 🚀[Rocketseat](https://rocketseat.com.br/) e ministrado pelo professor [Diego Fernandes](https://github.com/diego3g).
 
 ---
 
@@ -40,7 +40,16 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Letme
 ### Servidor local
 localhost:3000
 
+## ⚠️ ALERT ⚠️
+Lembrando que será necessário criar uma conta no Firebase e um projeto para disponibilizar um Realtime Database.
+
 ---
+
+## 🏷️ Layout
+Você pode visualizar o layout do projeto através do link abaixo:
+[layout](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate?node-id=0%3A1)
+
+Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/).
 
 ## Autor
 ### 👤 Elisio Wander
