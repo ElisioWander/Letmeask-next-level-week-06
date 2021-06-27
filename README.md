@@ -41,12 +41,13 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Letme
 localhost:3000
 
 ## ⚠️ ALERT ⚠️
-Lembrando que será necessário criar uma conta no Firebase e um projeto para disponibilizar um Realtime Database.
+Lembrando que será necessário criar uma conta no [Firebase](https://console.firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
 
 ---
 
 ## 🏷️ Layout
 Você pode visualizar o layout do projeto através do link abaixo:
+
 [layout](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate?node-id=0%3A1)
 
 Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/).
