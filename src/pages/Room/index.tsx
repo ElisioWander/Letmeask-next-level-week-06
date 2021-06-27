@@ -16,12 +16,18 @@ type RoomParams = {
 }
 
 export function Room() {
-    const { user } = useAuth()
+    const { user, signInWithGoogle } = useAuth()
     const params = useParams<RoomParams>()
     const [newQuestion, setNewQuestion] = useState('')
     const roomId = params.id
 
     const { questions, title } = useRoom(roomId)
+
+    async function handleLogInWithGoogle() {
+        if(!user) {
+            signInWithGoogle()
+        }
+    }
 
     function handleSendQuestion(event: FormEvent) {
         event.preventDefault()
@@ -50,6 +56,11 @@ export function Room() {
     }
 
     async function handleLikeQuestion(questionId: string, likeId: string | undefined) {
+        if(!user) {
+            window.alert('Você precisa estar logado')
+            return
+        }
+
         if(likeId) {
             //remove like
             await database.ref(`rooms/${roomId}/questions/${questionId}/likes/${likeId}`).remove()
@@ -72,7 +83,10 @@ export function Room() {
             <main>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
-                    {questions.length > 0 && <span>{questions.length} perguntas</span>}
+                    {questions.length == 1 ? 
+                    <span>{questions.length} pergunta</span>
+                    :
+                    <span>{questions.length} perguntas</span>}
                 </div>
 
                 <form onSubmit={handleSendQuestion}>
@@ -89,7 +103,7 @@ export function Room() {
                                 <span>{user.name}</span>
                             </div>
                         ) : (
-                            <span>Para enviar uma pergunta, <button>faça seu login</button>,</span>
+                            <span>Para enviar uma pergunta, <button onClick={handleLogInWithGoogle}>faça seu login</button>,</span>
                         )}
 
                         <Button type="submit" disabled={!user}>
