@@ -7,9 +7,14 @@ import { useAuth } from '../../hooks/useAuth'
 import { useRoom } from '../../hooks/useRoom'
 import { database } from '../../services/firebase'
 
+import { PageRoom } from './styles'
+import { Header } from './styles'
+import { Main } from './styles'
+import { Form } from './styles'
+
+
 import logoImg from '../../assets/images/logo.svg'
 
-import './room.scss'
 
 type RoomParams = {
     id: string
@@ -23,7 +28,7 @@ export function Room() {
 
     const { questions, title } = useRoom(roomId)
 
-    async function handleLogInWithGoogle() {
+    function handleLogInWithGoogle() {
         if(!user) {
             signInWithGoogle()
         }
@@ -72,15 +77,15 @@ export function Room() {
     }
 
     return (
-        <div id="page-room">
-            <header>
+        <PageRoom>
+            <Header>
                 <div className="content">
                     <img src={logoImg} alt="Letmeask" />
-                    <RoomCode code={roomId} />
+                    <RoomCode code={roomId} />    
                 </div>
-            </header>
+            </Header>
 
-            <main>
+            <Main>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
                     {questions.length == 1 ? 
@@ -89,7 +94,7 @@ export function Room() {
                     <span>{questions.length} perguntas</span>}
                 </div>
 
-                <form onSubmit={handleSendQuestion}>
+                <Form onSubmit={handleSendQuestion}>
                     <textarea
                         placeholder="O que você quer perguntar?"
                         onChange={event => setNewQuestion(event.target.value)}
@@ -110,7 +115,7 @@ export function Room() {
                             Enviar pergunta
                         </Button>
                     </div>
-                </form>
+                </Form>
 
                 <div className="question-list">
                     {questions.map(question => {
@@ -140,7 +145,7 @@ export function Room() {
                         )
                     })}
                 </div>
-            </main>
-        </div>
+            </Main>
+        </PageRoom>
     )
 }

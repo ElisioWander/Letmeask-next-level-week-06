@@ -1,3 +1,24 @@
+:root {
+    --white: #FFFFFF;
+
+    --gray-50: #EFEFEF;
+    --gray-100: #E1E1E6;
+    --gray-300: #A8A8B3;
+    --gray-500: #737380;
+    --gray-800: #29292E;
+    --gray-850: #1F2729;
+    --gray-900: #121214;
+
+    --cyan-500: #61DAFB;
+    --yallow-500: #EBA417;
+
+    --purple-100: #835AFD;
+
+    --red-100: #EA4335;
+
+    --blue-100: #485BFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +27,8 @@
 }
 
 body {
-    color: #29292E;
-    background-color: #F8F8F8;
+    color: var(--gray-900);
+    background-color: var(--white);
 }
 
 body, input, button, textarea {

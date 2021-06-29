@@ -1,7 +1,7 @@
 .room-code {
     height: 40px;
 
-    border: solid 1px #8354FD;
+    border: solid 1px var(--cyan-500);
     border-radius: 8px;
     
     display: flex;
@@ -9,7 +9,7 @@
     cursor: pointer;
     overflow: hidden;
 
-    background-color: #FFF;
+    background-color: var(--white);
 
 
     div {
@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         
-        background-color: #8354FD;
+        background-color: var(--cyan-500);
     }
 
     span {

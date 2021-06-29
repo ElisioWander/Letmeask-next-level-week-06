@@ -4,6 +4,7 @@ import { Question } from '../../Components/Question/index'
 import { RoomCode } from '../../Components/RoomCode/index'
 // import { useAuth } from '../../hooks/useAuth'
 import { useRoom } from '../../hooks/useRoom'
+import { database } from '../../services/firebase'
 
 import logoImg from '../../assets/images/logo.svg'
 import deleteImg from '../../assets/images/delete.svg'
@@ -12,7 +13,6 @@ import checkImg from '../../assets/images/check.svg'
 
 import '../Room/room.scss'
 import './admin-room.scss'
-import { database } from '../../services/firebase'
 
 type RoomParams = {
     id: string

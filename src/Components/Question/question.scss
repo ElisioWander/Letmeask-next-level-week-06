@@ -4,29 +4,29 @@
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 
-    background-color: #EFEFEF;
+    background-color: var(--gray-50);
 
     & + .question {
         margin-top: 8px;
     }
     
     &.highlighted {
-      border: 1px solid #8354FD;
-      background-color: #F4F0ff;
+      border: 1px solid var(--blue-100);
+      background-color: var(--white);
 
       & footer .user-info span {
-        color: #29292E;
+        color: var(--gray-800);
         font-weight: 500;
       }
     }
 
     &.answered {
-      background-color: #DBDCDD;
+      background-color: var(--gray-100);
     }
 
 
     p {
-        color: #29292E;
+        color: var(--gray-800);
     }
 
     footer {
@@ -45,6 +45,10 @@
               height: 32px;
   
               border-radius: 50%;
+              
+              padding: 1px;
+
+              background-color: var(--cyan-500);
             }
   
             span {
@@ -52,7 +56,7 @@
   
               font-size: 14px;
               
-              color: #737380;
+              color: var(--gray-800);
             }
           }
 
@@ -73,13 +77,13 @@
               align-items: flex-end;
               gap: 8px;
 
-              color: #737380;
+              color: var(--gray-500);
 
               &.liked {
-                color: #835AFD;
+                color: var(--blue-100);
 
                 svg path {
-                  stroke: #835AFD;
+                  stroke: var(--blue-100);
                 }
               }
             }

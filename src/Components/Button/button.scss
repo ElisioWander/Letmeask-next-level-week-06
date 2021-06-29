@@ -14,16 +14,16 @@
 
     font-weight: 500;
 
-    color: #FFF;
-    background-color: #835AFD;
+    color: var(--white);
+    background-color: var(--blue-100);
 
     transition: filter 200ms;
 
     &.outlined {
-        border: solid 1px #835AFD;
+        border: solid 1px var(--blue-100);
 
-        color: #835AFD;
-        background-color: #FFF;
+        color: var(--blue-100);
+        background-color: var(--white);
     }
 
     &:not(:disabled):hover {
