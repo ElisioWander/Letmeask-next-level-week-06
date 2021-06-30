@@ -1,11 +1,13 @@
-.room-code {
+import styled from "styled-components";
+
+export const RoomCodeButton = styled.button`
     height: 40px;
 
     border: solid 1px var(--cyan-500);
     border-radius: 8px;
-    
+
     display: flex;
-    
+
     cursor: pointer;
     overflow: hidden;
 
@@ -36,4 +38,4 @@
         font-size: 14px;
         font-weight: 500;
     }
-}
+`

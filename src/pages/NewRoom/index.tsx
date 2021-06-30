@@ -12,9 +12,6 @@ import { MainContent } from './styles'
 
 import logoImg from "../../assets/images/logo.svg"
 
-
-import '../../styles/auth.scss'
-
 export function NewRoom() {
   const { user } = useAuth()
 
