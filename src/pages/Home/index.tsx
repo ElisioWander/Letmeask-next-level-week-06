@@ -3,13 +3,15 @@ import { useHistory } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { database } from '../../services/firebase'
 
-import illustrationImg from "../../assets/images/illustration.svg"
+import { Button } from '../../Components/Button/index'
+import { Aside } from '../../Components/Aside/index'
+
+import { PageAuth } from './styles'
+import { Main } from './styles'
+import { MainContent } from './styles'
+
 import logoImg from "../../assets/images/logo.svg"
 import googleIconImg from "../../assets/images/google-icon.svg"
-
-import { Button } from '../../Components/Button/index'
-
-import '../../styles/auth.scss'
 
 export function Home() {
   const history = useHistory()
@@ -47,17 +49,10 @@ export function Home() {
   }
 
   return (
-    <div id="page-auth">
-      <aside>
-        <img
-          src={illustrationImg}
-          alt="Ilustração simbolizando perguntas e respostas"
-        />
-        <strong>Crie salas de Q&amp;A ao-vivo</strong>
-        <p>Tire as dúvidas da sua audiência em tempo real</p>
-      </aside>
-      <main>
-        <div className="main-content">
+    <PageAuth>
+      <Aside />
+      <Main>
+        <MainContent>
           <img src={logoImg} alt="Letmeask" />
           <button 
             className="create-room"
@@ -82,8 +77,8 @@ export function Home() {
                 Entrar na sala
             </Button>
           </form>
-        </div>
-      </main>
-    </div>
+        </MainContent>
+      </Main>
+    </PageAuth>
   );
 }

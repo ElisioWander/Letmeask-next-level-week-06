@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
 :root {
     --white: #FFFFFF;
 
@@ -34,3 +37,5 @@ body {
 body, input, button, textarea {
     font: 400 16px 'Roboto', sans-serif;
 }
+
+`

@@ -1,18 +1,17 @@
 import { useParams, useHistory } from 'react-router-dom'
-import { Button } from '../../Components/Button/index'
 import { Question } from '../../Components/Question/index'
-import { RoomCode } from '../../Components/RoomCode/index'
+import { Header } from '../../Components/Header/index'
+import { Button } from '../../Components/Button'
 // import { useAuth } from '../../hooks/useAuth'
 import { useRoom } from '../../hooks/useRoom'
 import { database } from '../../services/firebase'
 
-import logoImg from '../../assets/images/logo.svg'
+import { PageRoom } from './styles'
+import { Main } from './styles'
+
 import deleteImg from '../../assets/images/delete.svg'
 import answerImg from '../../assets/images/answer.svg'
 import checkImg from '../../assets/images/check.svg'
-
-import '../Room/room.scss'
-import './admin-room.scss'
 
 type RoomParams = {
     id: string
@@ -53,21 +52,17 @@ export function AdminRoom() {
     }
 
     return (
-        <div id="page-room">
-            <header>
-                <div className="content">
-                    <img src={logoImg} alt="Letmeask" />
-                    <div>
-                    <RoomCode code={roomId} />
+        <PageRoom>
+            <Header code={roomId} >
+                <div className="close-room-button">
                     <Button isOutlined onClick={() => handleEndRoom()} >Fechar sala</Button>
-                    </div>
                 </div>
-            </header>
+            </Header>
 
-            <main>
+            <Main>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
-                    {questions.length == 1 ? 
+                    {questions.length === 1 ? 
                     <span>{questions.length} pergunta</span>
                     :
                     <span>{questions.length} perguntas</span>}
@@ -108,7 +103,7 @@ export function AdminRoom() {
                         )
                     })}
                 </div>
-            </main>
-        </div>
+            </Main>
+        </PageRoom>
     )
 }

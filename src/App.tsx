@@ -6,6 +6,8 @@ import { Home } from './pages/Home/index'
 import { Room } from './pages/Room/index'
 import { AdminRoom } from './pages/AdminRoom/index'
 
+import { GlobalStyles } from './styles/global'
+
 function App() {
 
 
@@ -18,6 +20,8 @@ function App() {
           <Route path="/rooms/:id" component={Room} />
           <Route path="/admin/rooms/:id" component={AdminRoom} />
         </Switch>
+
+        <GlobalStyles />
       </AuthContextProvider>
     </BrowserRouter>
   )

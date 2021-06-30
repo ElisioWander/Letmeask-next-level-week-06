@@ -2,18 +2,14 @@ import { useState, FormEvent } from 'react'
 import { useParams } from 'react-router-dom'
 import { Button } from '../../Components/Button/index'
 import { Question } from '../../Components/Question/index'
-import { RoomCode } from '../../Components/RoomCode/index'
+import { Header } from '../../Components/Header/index'
 import { useAuth } from '../../hooks/useAuth'
 import { useRoom } from '../../hooks/useRoom'
 import { database } from '../../services/firebase'
 
 import { PageRoom } from './styles'
-import { Header } from './styles'
 import { Main } from './styles'
 import { Form } from './styles'
-
-
-import logoImg from '../../assets/images/logo.svg'
 
 
 type RoomParams = {
@@ -78,17 +74,13 @@ export function Room() {
 
     return (
         <PageRoom>
-            <Header>
-                <div className="content">
-                    <img src={logoImg} alt="Letmeask" />
-                    <RoomCode code={roomId} />    
-                </div>
+            <Header code={roomId}>
             </Header>
 
             <Main>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
-                    {questions.length == 1 ? 
+                    {questions.length === 1 ? 
                     <span>{questions.length} pergunta</span>
                     :
                     <span>{questions.length} perguntas</span>}

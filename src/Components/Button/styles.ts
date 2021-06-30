@@ -1,4 +1,6 @@
-.button {
+import styled from "styled-components";
+
+export const ButtonStyled = styled.button`
     height: 40px;
 
     padding: 0 16px;
@@ -34,4 +36,4 @@
         opacity: 0.6;
         cursor: not-allowed;
     }
-}
+`
