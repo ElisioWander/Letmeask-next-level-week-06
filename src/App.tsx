@@ -9,8 +9,6 @@ import { AdminRoom } from './pages/AdminRoom/index'
 import { GlobalStyles } from './styles/global'
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <AuthContextProvider>
