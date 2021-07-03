@@ -7,7 +7,7 @@ export const AsideStyled = styled.aside`
   flex-direction: column;
   justify-content: center;
 
-  padding: 120px 88px;
+  padding: 7.5rem 5.5rem;
 
   color: var(--white);
   background-color: var(--cyan-500);
@@ -17,17 +17,17 @@ export const AsideStyled = styled.aside`
   }
 
   strong {
-    font: 700 36px "Poppins", sans-serif;
-    line-height: 42px;
+    font: 700 2.2rem "Poppins", sans-serif;
+    line-height: 2.6rem;
 
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 
   p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 
-    margin-top: 16px;
+    margin-top: 1rem;
 
     color: var(--gray-100);
   }

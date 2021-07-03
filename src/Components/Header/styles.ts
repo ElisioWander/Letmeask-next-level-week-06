@@ -14,13 +14,15 @@ export const HeaderStyled = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    > img {
-      max-height: 45px;
+    > a {
+      & img {
+        max-height: 2.8rem;
+      }
     }
 
     > div {
       display: flex;
-      gap: 16px;
+      gap: 1rem;
     }
   }
 `;

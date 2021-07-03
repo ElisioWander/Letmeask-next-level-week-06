@@ -1,9 +1,9 @@
 import Modal from 'react-modal'
 import { AiOutlineExclamation } from 'react-icons/ai'
 
-import { useAuth } from '../../hooks/useAuth'
+import { useAuth } from '../../../../hooks/useAuth'
 
-import { Container } from '../../styles/modal-styles'
+import { Container } from '../../../../styles/modal-styles'
 
 type RequestLogInModalProps = {
     isOpen: boolean,

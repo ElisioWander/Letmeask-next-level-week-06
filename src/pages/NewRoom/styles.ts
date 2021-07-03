@@ -13,7 +13,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
 
-    padding: 0 32px;
+    padding: 0 2rem;
 `
 export const MainContent = styled.div`
     width: 100%;
@@ -30,16 +30,16 @@ export const MainContent = styled.div`
     }
 
     h2 {
-        margin: 64px 0 24px;
+        margin: 4rem 0 1.5rem;
 
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
     }
 
     form {
         input {
-            height: 50px;
-            padding: 0 16px;
+            height: 3.2rem;
+            padding: 0 1rem;
 
             border: solid 1px var(--gray-300);
             border-radius: 8px;
@@ -48,7 +48,7 @@ export const MainContent = styled.div`
         }
 
         button {
-            margin-top: 16px;
+            margin-top: 1rem;
         }
 
         button, input {
@@ -57,9 +57,9 @@ export const MainContent = styled.div`
     }
 
     p {
-        margin-top: 16px;
+        margin-top: 1rem;
 
-        font-size: 14px;
+        font-size: 0.8rem;
 
         color:  var(--gray-500);
 

@@ -12,9 +12,9 @@ export const Container = styled.div`
         }
 
         h2 {
-            margin: 16px 0 12px;
+            margin: 1rem 0 0.7rem;
 
-            line-height: 34px;
+            line-height: 2.1rem;
         }
 
         p {
@@ -23,8 +23,8 @@ export const Container = styled.div`
     }
     
     button {
-        margin-top: 42px;
-        padding: 12px 32px;
+        margin-top: 2.6rem;
+        padding: 0.7rem 2rem;
 
         cursor: pointer;
 
@@ -46,7 +46,7 @@ export const Container = styled.div`
     button + button {
         width: 159px;
 
-        margin-left: 8px;
+        margin-left: 0.5rem;
 
         border: solid 1px var(--gray-900);
 

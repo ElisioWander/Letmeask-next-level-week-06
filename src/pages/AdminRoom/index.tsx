@@ -7,8 +7,8 @@ import { database } from "../../services/firebase"
 import { Question } from "../../Components/Question/index"
 import { Header } from "../../Components/Header/index"
 import { Button } from "../../Components/Button"
-import { DeleteQuestionModal } from "../../Components/DeleteQuestionModal"
-import { ShutRoomModal } from "../../Components/ShutRoomModal"
+import { DeleteQuestionModal } from "./Modals/DeleteQuestionModal/index"
+import { ShutRoomModal } from "./Modals/ShutRoomModal/index"
 
 import { PageRoom } from "./styles";
 import { Main } from "./styles";

@@ -29,13 +29,23 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%; 
+    }
+
+    @media (max-width: 720px) {
+        font-size: 87.5%;
+    }
+}
+
 body {
     color: var(--gray-900);
     background-color: var(--white);
 }
 
 body, input, button, textarea {
-    font: 400 16px 'Roboto', sans-serif;
+    font: 400 1rem 'Roboto', sans-serif;
 }
 
 .react-modal-overlay {

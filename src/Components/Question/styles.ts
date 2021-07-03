@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const QuestionStyled = styled.div`
-    padding: 24px;
+    padding: 1.5rem;
 
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -9,7 +9,7 @@ export const QuestionStyled = styled.div`
     background-color: var(--gray-50);
 
     & + .question {
-        margin-top: 8px;
+        margin-top: 0.5rem;
     }
 
     &.highlighted {
@@ -32,7 +32,7 @@ export const QuestionStyled = styled.div`
     }
 
     footer {
-        margin-top: 24px;
+        margin-top: 1.5rem;
 
         display: flex;
         align-items: center;
@@ -54,9 +54,9 @@ export const QuestionStyled = styled.div`
             }
 
             span {
-            margin-left: 8px;
+            margin-left: 0.5rem;
 
-            font-size: 14px;
+            font-size: 0.8rem;
             
             color: var(--gray-800);
             }
@@ -64,7 +64,7 @@ export const QuestionStyled = styled.div`
 
         > div {
             display: flex;
-            gap: 16px;
+            gap: 1rem;
         }
 
         button {
@@ -77,7 +77,7 @@ export const QuestionStyled = styled.div`
             &.like-button {
             display: flex;
             align-items: flex-end;
-            gap: 8px;
+            gap: 0.5rem;
 
             color: var(--gray-500);
 

@@ -1,9 +1,9 @@
 import Modal from 'react-modal'
-import { database } from '../../services/firebase'
+import { database } from '../../../../services/firebase'
 
-import { Container } from '../../styles/modal-styles'
+import { Container } from '../../../../styles/modal-styles'
 
-import deleteModalImg from '../../assets/images/delete-modal.svg'
+import deleteModalImg from '../../../../assets/images/delete-modal.svg'
 
 type DeleteQuestionModalProps = {
     question: string

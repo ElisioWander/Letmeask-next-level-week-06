@@ -45,7 +45,11 @@ export function Home() {
       return
     }
 
-    history.push(`/rooms/${roomCode}`)
+    if(user) {
+      history.push(`/admin/rooms/${roomCode}`)
+    } else {
+      history.push(`/rooms/${roomCode}`)
+    }
   }
 
   return (

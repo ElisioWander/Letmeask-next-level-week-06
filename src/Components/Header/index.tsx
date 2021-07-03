@@ -16,7 +16,7 @@ export function Header({ code, children }: RoomProps ) {
     return (
         <HeaderStyled>
             <div className="content">
-                <img src={logoImg} alt="Letmeask" />
+                <a href="/"><img src={logoImg} alt="Letmeask" /></a>
                 <div>
                     <RoomCode code={code} />
                     <div>

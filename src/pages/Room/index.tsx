@@ -12,7 +12,7 @@ import { PageRoom } from './styles'
 import { Main } from './styles'
 import { Form } from './styles'
 
-import { RequereLogInModal } from '../../Components/RequestLogInModal/index'
+import { RequereLogInModal } from './Modals/RequestLogInModal/index' 
 
 
 type RoomParams = {

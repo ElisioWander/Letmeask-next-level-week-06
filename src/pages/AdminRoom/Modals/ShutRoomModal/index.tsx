@@ -1,10 +1,10 @@
 import Modal from 'react-modal'
 import { useHistory } from 'react-router-dom'
-import { database } from '../../services/firebase'
+import { database } from '../../../../services/firebase'
 
-import { Container } from '../../styles/modal-styles'
+import { Container } from '../../../../styles/modal-styles'
 
-import closeRoomImg from '../../assets/images/close-room.svg'
+import closeRoomImg from '../../../../assets/images/close-room.svg'
 
 type ShutRoomModalProps = {
     roomId: string,

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const RoomCodeButton = styled.button`
-    height: 40px;
+    height: 2.5rem;
 
     border: solid 1px var(--cyan-500);
     border-radius: 8px;
@@ -15,9 +15,9 @@ export const RoomCodeButton = styled.button`
 
 
     div {
-        height: 40px;
+        height: 2.5rem;
         
-        padding: 0 12px;
+        padding: 0 0.7rem;
 
         display: flex;
         justify-content: center;
@@ -27,15 +27,15 @@ export const RoomCodeButton = styled.button`
     }
 
     span {
-        width: 230px;
+        width: 14rem;
         
-        padding: 0 16px 0 12px;
+        padding: 0 1rem 0 0.7rem;
         
         display: block;
         align-self: center;
         flex: 1;
         
-        font-size: 14px;
+        font-size: 0.8rem;
         font-weight: 500;
     }
 `

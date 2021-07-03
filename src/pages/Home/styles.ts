@@ -14,7 +14,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
 
-    padding: 0 32px;
+    padding: 0 2.13rem;
 `
 
 export const MainContent = styled.div`
@@ -31,17 +31,10 @@ export const MainContent = styled.div`
         align-self: center;
     }
 
-    h2 {
-        margin: 64px 0 24px;
-
-        font-size: 24px;
-        font-family: 'Poppins', sans-serif;
-    }
-
     form {
         input {
-            height: 50px;
-            padding: 0 16px;
+            height: 3.2rem;
+            padding: 0 1rem;
 
             border: solid 1px var(--gray-300);
             border-radius: 8px;
@@ -50,33 +43,19 @@ export const MainContent = styled.div`
         }
 
         button {
-            margin-top: 16px;
+            margin-top: 1rem;
         }
 
         button, input {
             width: 100%;
         }
     }
-
-    p {
-        margin-top: 16px;
-
-        font-size: 14px;
-
-        color:  var(--gray-500);
-
-        a {
-            font-weight: 500;
-
-            color: var(--purple-100);
-        }
-    }
 }
 
     .create-room {
-        height: 50px;
+        height: 3.2rem;
 
-        margin-top: 64px;
+        margin-top: 4rem;
 
         border: 0;
         border-radius: 8px;
@@ -95,7 +74,7 @@ export const MainContent = styled.div`
         transition: filter 200ms;
 
         img {
-            margin-right: 8px;
+            margin-right: 0.5rem;
         }
 
         &:hover {
@@ -105,12 +84,12 @@ export const MainContent = styled.div`
     }
 
     .separator {
-        margin: 32px 0;
+        margin: 2rem 0;
 
         display: flex;
         align-items: center;
 
-        font-size: 14px;
+        font-size: 0.8rem;
         color: var(--gray-300);
 
         &::before {
@@ -119,7 +98,7 @@ export const MainContent = styled.div`
 
             flex: 1;
 
-            margin-right: 16px;
+            margin-right: 1rem;
             
             background-color: var(--gray-300);
         }
@@ -130,7 +109,7 @@ export const MainContent = styled.div`
 
             flex: 1;
 
-            margin-left: 16px;
+            margin-left: 1rem;
 
             background-color: var(--gray-300);
         }

@@ -8,25 +8,25 @@ export const Main = styled.main`
   margin: 0 auto;
 
   .room-title {
-    margin: 32px 0 24px;
+    margin: 2rem 0 1.5rem;
 
     display: flex;
     align-items: center;
 
     h1 {
       font-family: "Poppins", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
 
       color: var(--gray-800);
     }
 
     span {
-      margin-left: 16px;
-      padding: 8px 16px;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
 
       border-radius: 9999px;
 
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 500;
 
       color: var(--white);
@@ -35,7 +35,7 @@ export const Main = styled.main`
   }
 
     .question-list {
-      margin: 42px 0 64px;
+      margin: 2.6rem 0 4rem;
     }
 `;
 
@@ -44,7 +44,7 @@ export const Form = styled.form`
     width: 100%;
     min-height: 130px;
 
-    padding: 16px;
+    padding: 1rem;
 
     border: 0;
     border-radius: 8px;
@@ -56,7 +56,7 @@ export const Form = styled.form`
   }
 
   .form-footer {
-    margin-top: 16px;
+    margin-top: 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -78,9 +78,9 @@ export const Form = styled.form`
       }
 
       span {
-        margin-left: 8px;
+        margin-left: 0.5rem;
 
-        font-size: 14px;
+        font-size: 0.8rem;
         font-weight: 500;
 
         color: var(--gray-800);
@@ -88,7 +88,7 @@ export const Form = styled.form`
     }
 
     > span {
-      font-size: 14px;
+      font-size: 0.5rem;
       font-weight: 500;
 
       color: var(--gray-500);
@@ -98,7 +98,7 @@ export const Form = styled.form`
         cursor: pointer;
         text-decoration: underline;
 
-        font-size: 14px;
+        font-size: 0.8rem;
         font-weight: 500;
 
         color: var(--blue-100);
