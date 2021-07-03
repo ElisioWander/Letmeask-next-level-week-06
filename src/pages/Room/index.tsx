@@ -12,6 +12,8 @@ import { PageRoom } from './styles'
 import { Main } from './styles'
 import { Form } from './styles'
 
+import { RequereLogInModal } from '../../Components/RequestLogInModal/index'
+
 
 type RoomParams = {
     id: string
@@ -21,9 +23,18 @@ export function Room() {
     const { user, signInWithGoogle } = useAuth()
     const params = useParams<RoomParams>()
     const [newQuestion, setNewQuestion] = useState('')
+    const [requereLogInModal, setRequereLogInModal] = useState(false)
     const roomId = params.id
 
     const { questions, title } = useRoom(roomId)
+
+    function handleOpenRequestLogInModal() {
+        setRequereLogInModal(true)
+    }
+
+    function handleCloseRequestLogInModal() {
+        setRequereLogInModal(false)
+    }
 
     function handleLogInWithGoogle() {
         if(!user) {
@@ -59,7 +70,7 @@ export function Room() {
 
     async function handleLikeQuestion(questionId: string, likeId: string | undefined) {
         if(!user) {
-            window.alert('Você precisa estar logado')
+            handleOpenRequestLogInModal()
             return
         }
 
@@ -134,6 +145,11 @@ export function Room() {
                                         </svg>
                                     </button>
                                 ) }
+
+                                <RequereLogInModal 
+                                    isOpen={requereLogInModal}
+                                    onRequestClose={handleCloseRequestLogInModal}    
+                                />
                             </Question>
                         )
                     })}

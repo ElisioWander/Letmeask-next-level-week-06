@@ -1,6 +1,6 @@
-import { useParams, useHistory } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useState } from 'react'
-// import { useAuth } from '../../hooks/useAuth'
+
 import { useRoom } from "../../hooks/useRoom"
 import { database } from "../../services/firebase"
 
@@ -27,7 +27,6 @@ export function AdminRoom() {
   const roomId = params.id;
 
   const { questions, title } = useRoom(roomId);
-  const history = useHistory();
 
   const [isDeleteQuestionModal, setIsDeleteQuestionModal] = useState(false)
   const [isShutRoomModal, setIsShutRoomModal] = useState(false)
@@ -59,15 +58,13 @@ export function AdminRoom() {
       isHighlighted: true,
     });
   }
-  
-  
 
   return (
     <PageRoom>
       <Header code={roomId}>
         <div className="close-room-button">
           <Button isOutlined onClick={handleOpenShutRoomModal}>
-            Fechar sala
+            Encerrar sala
           </Button>
 
           <ShutRoomModal
