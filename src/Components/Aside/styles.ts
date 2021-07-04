@@ -31,4 +31,63 @@ export const AsideStyled = styled.aside`
 
     color: var(--gray-100);
   }
+
+  @media (max-width: 768px) {
+    strong {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      height: 240px;
+    }
+
+    strong {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    button {
+      display: initial;
+
+      height: 2.5rem;
+
+      margin-top: 2rem;
+      padding: 1rem 1rem;
+
+      border: 0;
+      border-radius: 8px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      font-weight: 500;
+
+      color: var(--white);
+      background-color: var(--blue-100);
+
+      transition: filter 2ms;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
 `

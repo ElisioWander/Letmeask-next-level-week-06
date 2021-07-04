@@ -31,7 +31,7 @@ export const GlobalStyles = createGlobalStyle`
 
 html {
     @media (max-width: 1080px) {
-        font-size: 93.75%; 
+        font-size: 93.75%;
     }
 
     @media (max-width: 720px) {
@@ -60,6 +60,23 @@ body, input, button, textarea {
     justify-content: center;
 
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
 }
 
 .react-modal-content {

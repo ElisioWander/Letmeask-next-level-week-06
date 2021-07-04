@@ -25,4 +25,21 @@ export const HeaderStyled = styled.header`
       gap: 1rem;
     }
   }
+
+  @media (max-width: 768px) {
+   .content {
+     max-width: 662px;
+   }
+  }
+
+  @media (max-width: 425px) {
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        display: none;
+      }
+    }
+  }
 `;

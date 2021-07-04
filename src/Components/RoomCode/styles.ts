@@ -38,4 +38,8 @@ export const RoomCodeButton = styled.button`
         font-size: 0.8rem;
         font-weight: 500;
     }
+
+    @media (max-width: 375px) {
+        min-width: 220px;
+    }
 `

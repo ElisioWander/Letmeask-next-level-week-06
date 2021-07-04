@@ -38,4 +38,37 @@ export const Main = styled.main`
   .question-list {
     margin: 2rem 0 4rem;
   }
+
+  @media (max-width: 768px) {
+    max-width: 662px;
+
+    .room-title {
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    max-width: 420px;
+
+    padding: 2rem;
+
+    .room-title {
+      display: block;
+
+      margin: 0;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      span {
+        display: inline-block;
+        margin: 1rem 0 0;
+
+        font-size: 1rem;
+      }
+    }
+  }
 `

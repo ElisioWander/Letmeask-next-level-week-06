@@ -36,10 +36,8 @@ export function Room() {
         setRequereLogInModal(false)
     }
 
-    function handleLogInWithGoogle() {
-        if(!user) {
-            signInWithGoogle()
-        }
+    async function handleLogInWithGoogle() {
+       if(!user) await signInWithGoogle()
     }
 
     function handleSendQuestion(event: FormEvent) {

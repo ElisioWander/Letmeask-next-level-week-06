@@ -1,3 +1,5 @@
+import Modal from 'react-modal'
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { AuthContextProvider } from './contexts/AuthContext'
 
@@ -7,6 +9,8 @@ import { Room } from './pages/Room/index'
 import { AdminRoom } from './pages/AdminRoom/index'
 
 import { GlobalStyles } from './styles/global'
+
+Modal.setAppElement("#root")
 
 function App() {
   return (

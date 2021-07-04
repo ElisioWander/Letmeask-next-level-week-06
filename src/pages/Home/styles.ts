@@ -5,6 +5,16 @@ export const PageAuth = styled.div`
 
     display: flex;
     align-items: stretch;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 420px 1fr;
+    }
+
+    @media (max-width: 425px) {
+        display: block;
+    }
+    
 `
 
 export const Main = styled.main`
@@ -15,44 +25,52 @@ export const Main = styled.main`
     justify-content: center;
 
     padding: 0 2.13rem;
-`
 
-export const MainContent = styled.div`
-    width: 100%;
-    max-width: 320px;
+    .content {
+        width: 100%;
+        max-width: 320px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
-    text-align: center;
+        text-align: center;
 
-    > img {
-        align-self: center;
-    }
-
-    form {
-        input {
-            height: 3.2rem;
-            padding: 0 1rem;
-
-            border: solid 1px var(--gray-300);
-            border-radius: 8px;
-
-            background-color: var(--white);
+        > img {
+            align-self: center;
         }
 
-        button {
-            margin-top: 1rem;
+        form {
+            input {
+                height: 3.2rem;
+                padding: 0 1rem;
+
+                border: solid 1px var(--gray-300);
+                border-radius: 8px;
+
+                background-color: var(--white);
+            }
+
+            button {
+                margin-top: 1rem;
+            }
+
+            button, input {
+                width: 100%;
+            }
         }
 
-        button, input {
-            width: 100%;
-        }
-    }
-}
+        @media (max-width: 768px) {
+            > img {
+                width: 120px;
+            }
 
-    .create-room {
+            input, button {
+                font-size: 0.8rem;
+            }
+        }
+
+        .create-room {
         height: 3.2rem;
 
         margin-top: 4rem;
@@ -113,4 +131,28 @@ export const MainContent = styled.div`
 
             background-color: var(--gray-300);
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        display: none;
+    }
+
+    .content.on {
+        min-width: 425px;
+
+        display: flex;
+
+        position: absolute;
+
+        padding: 7rem 4rem 2rem;
+
+        top: 0;
+        bottom: 0;
+
+        background-color: var(--white);
+    }
+}
+
 `

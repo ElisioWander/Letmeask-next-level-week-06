@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import cx from 'classnames'
 import { useAuth } from '../../hooks/useAuth'
 import { database } from '../../services/firebase'
 
@@ -8,7 +9,6 @@ import { Aside } from '../../Components/Aside/index'
 
 import { PageAuth } from './styles'
 import { Main } from './styles'
-import { MainContent } from './styles'
 
 import logoImg from "../../assets/images/logo.svg"
 import googleIconImg from "../../assets/images/google-icon.svg"
@@ -17,6 +17,7 @@ export function Home() {
   const history = useHistory()
   const { user, signInWithGoogle } = useAuth()
   const [roomCode, setRoomCode] = useState('')
+  const [displayOn, setDisplayOn] = useState(false)
 
   async function handleCreateRoom() {
     if (!user) {
@@ -52,11 +53,20 @@ export function Home() {
     }
   }
 
+  function handleChangeState() {
+    setDisplayOn(true)
+  }
+
   return (
     <PageAuth>
-      <Aside />
+      <Aside >
+        <button type="button" hidden onClick={handleChangeState} >Começar agora</button>
+      </Aside>
       <Main>
-        <MainContent>
+        <div className={cx(
+          `content`,
+          { on: displayOn }
+        )}>
           <img src={logoImg} alt="Letmeask" />
           <button 
             className="create-room"
@@ -81,7 +91,7 @@ export function Home() {
                 Entrar na sala
             </Button>
           </form>
-        </MainContent>
+        </div>
       </Main>
     </PageAuth>
   );
