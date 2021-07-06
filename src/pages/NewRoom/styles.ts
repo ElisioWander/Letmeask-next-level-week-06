@@ -5,6 +5,11 @@ export const PageCreateNewRoom = styled.div`
 
     display: flex;
     align-items: stretch;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 420px 1fr;
+    }
 `
 export const Main = styled.main`
     flex: 8;
@@ -67,6 +72,16 @@ export const MainContent = styled.div`
             font-weight: 500;
 
             color: var(--purple-100);
+        }
+    }
+
+    @media(max-width: 768px) {
+        img {
+            width: 120px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
         }
     }
 `
