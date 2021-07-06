@@ -4,15 +4,12 @@ export const PageAuth = styled.div`
     height: 100vh;
 
     display: flex;
-    align-items: stretch;
+    align-items: stretch; 
 
-    @media (max-width: 768px) {
-        display: grid;
-        grid-template-columns: 420px 1fr;
-    }
+    overflow: hidden;
 
     @media (max-width: 425px) {
-        display: block;
+       display: block;
     }
     
 `
@@ -25,6 +22,20 @@ export const Main = styled.main`
     justify-content: center;
 
     padding: 0 2.13rem;
+
+    @media(max-width: 425px) {
+        overflow: hidden;
+
+        &.on {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            background-color: var(--white);
+        }
+    }
 
     .content {
         width: 100%;
@@ -135,7 +146,7 @@ export const Main = styled.main`
 }
 
 @media (max-width: 425px) {
-    .content {
+    /* .content {
         display: none;
     }
 
@@ -152,7 +163,7 @@ export const Main = styled.main`
         bottom: 0;
 
         background-color: var(--white);
-    }
+    } */
 }
 
 `

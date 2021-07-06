@@ -7,9 +7,14 @@ export const PageCreateNewRoom = styled.div`
     align-items: stretch;
 
     @media (max-width: 768px) {
-        display: grid;
-        grid-template-columns: 420px 1fr;
+        width: 100%;
+        min-width: 740;
     }
+
+    @media (max-width: 425px) {
+        display: block;
+    }
+
 `
 export const Main = styled.main`
     flex: 8;
@@ -19,6 +24,17 @@ export const Main = styled.main`
     justify-content: center;
 
     padding: 0 2rem;
+
+    @media(max-width: 694px) {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: var(--white);
+    }
 `
 export const MainContent = styled.div`
     width: 100%;
@@ -82,6 +98,10 @@ export const MainContent = styled.div`
 
         h2 {
             font-size: 1.3rem;
+        }
+
+        form input, button {
+            font-size: 0.8rem;
         }
     }
 `

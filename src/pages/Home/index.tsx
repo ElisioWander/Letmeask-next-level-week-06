@@ -62,11 +62,9 @@ export function Home() {
       <Aside >
         <button type="button" hidden onClick={handleChangeState} >Começar agora</button>
       </Aside>
-      <Main>
-        <div className={cx(
-          `content`,
-          { on: displayOn }
+      <Main className={cx({on: displayOn }
         )}>
+        <div className="content">
           <img src={logoImg} alt="Letmeask" />
           <button 
             className="create-room"

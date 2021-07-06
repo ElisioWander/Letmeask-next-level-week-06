@@ -33,8 +33,12 @@ export const AsideStyled = styled.aside`
   }
 
   @media (max-width: 768px) {
+    max-width: 400px;
+
+    text-align: center;
+
     strong {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     p {
@@ -45,9 +49,7 @@ export const AsideStyled = styled.aside`
   @media (max-width: 425px) {
     height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 430px;
 
     > img {
       height: 240px;
@@ -61,9 +63,13 @@ export const AsideStyled = styled.aside`
       font-size: 0.9rem;
     }
 
-    button {
-      display: initial;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    button {
       height: 2.5rem;
 
       margin-top: 2rem;
@@ -88,6 +94,12 @@ export const AsideStyled = styled.aside`
       &:hover {
         filter: brightness(0.8);
       }
+    }
+  }
+
+  @media (max-width: 375px) {
+    strong {
+      font-size: 1.1rem;
     }
   }
 `
