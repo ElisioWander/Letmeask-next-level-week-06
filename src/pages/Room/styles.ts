@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const PageRoom = styled.div``;
+export const PageRoom = styled.div`
+  @media(max-width: 425px) {
+    .content {
+      display: block;
+    }
+  }
+`;
 
 export const Main = styled.main`
   max-width: 800px;
@@ -37,6 +43,39 @@ export const Main = styled.main`
     .question-list {
       margin: 2.6rem 0 4rem;
     }
+
+    @media (max-width: 768px) {
+    max-width: 662px;
+
+    .room-title {
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    max-width: 420px;
+
+    padding: 2rem;
+
+    .room-title {
+      display: block;
+
+      margin: 0;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      span {
+        display: inline-block;
+        margin: 1rem 0 0;
+
+        font-size: 1rem;
+      }
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -104,6 +143,26 @@ export const Form = styled.form`
         color: var(--blue-100);
         background-color: transparent;
       }
+    }
+  }
+
+  @media(max-width: 425px) {
+    margin-top: 2rem;
+
+    .form-footer {
+      display: block;
+
+      span {
+        font-size: 0.8rem;
+
+        button {
+          font-size: 0.9;
+        }
+      }
+    }
+
+    button {
+      margin-top: 1rem;
     }
   }
 `;

@@ -26,19 +26,19 @@ export const HeaderStyled = styled.header`
     }
   }
 
-  @media (max-width: 768px) {
-   .content {
-     max-width: 662px;
-   }
-  }
-
-  @media (max-width: 425px) {
+  @media(max-width: 425px) {
     .content {
-      display: flex;
-      justify-content: space-around;
-
       a {
-        display: none;
+        margin-bottom: 3rem;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column-reverse;
+        > div .close-room-button {
+          display: flex;
+          justify-content: flex-end;
+        }
       }
     }
   }

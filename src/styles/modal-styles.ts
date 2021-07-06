@@ -53,4 +53,16 @@ export const Container = styled.div`
         color: var(--white);
         background-color: var(--cyan-500);
     }
+
+    @media (max-width: 425px) {
+        button {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        button + button {
+            width: 100%;
+            margin: 1rem 0 0;
+        }
+    }
 `

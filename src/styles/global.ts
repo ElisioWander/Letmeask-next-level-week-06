@@ -90,4 +90,16 @@ body, input, button, textarea {
 
     background-color: var(--white);
 }
+
+@media (max-width: 425px) {
+    .react-modal-content {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .react-modal-content {
+        max-width: 284px;
+    }
+}
 `
