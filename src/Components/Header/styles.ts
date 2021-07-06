@@ -55,7 +55,7 @@ export const HeaderStyled = styled.header`
       }
       > div {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         > div .close-room-button {
           display: flex;
           justify-content: flex-end;
