@@ -1,4 +1,6 @@
 import { ReactNode } from 'react'
+import { BiArrowBack } from 'react-icons/bi'
+
 import { RoomCode } from '../RoomCode'
 
 import { HeaderStyled } from './styles'
@@ -16,7 +18,7 @@ export function Header({ code, children }: RoomProps ) {
     return (
         <HeaderStyled>
             <div className="content">
-                <a href="/"><img src={logoImg} alt="Letmeask" /></a>
+                <a href="/"><BiArrowBack /><img src={ logoImg } alt="Logo" /></a>
                 <div>
                     <RoomCode code={code} />
                     <div>

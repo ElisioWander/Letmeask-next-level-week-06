@@ -48,10 +48,9 @@ export const AsideStyled = styled.aside`
 
   @media (max-width: 425px) {
     max-width: 430px;
-    height: 100vh;
 
     > img {
-      height: 240px;
+      height: 182px;
     }
 
     strong {

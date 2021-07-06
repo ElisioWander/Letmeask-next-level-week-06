@@ -27,6 +27,8 @@ export const Main = styled.main`
         overflow: hidden;
 
         &.on {
+            height: 100vh;
+
             position: absolute;
             top: 0;
             right: 0;
@@ -143,27 +145,6 @@ export const Main = styled.main`
             background-color: var(--gray-300);
         }
     }
-}
-
-@media (max-width: 425px) {
-    /* .content {
-        display: none;
-    }
-
-    .content.on {
-        min-width: 425px;
-
-        display: flex;
-
-        position: absolute;
-
-        padding: 7rem 4rem 2rem;
-
-        top: 0;
-        bottom: 0;
-
-        background-color: var(--white);
-    } */
 }
 
 `

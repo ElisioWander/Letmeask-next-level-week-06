@@ -15,9 +15,13 @@ export const HeaderStyled = styled.header`
     justify-content: space-between;
 
     > a {
-      & img {
-        max-height: 2.8rem;
-      }
+        & img {
+          max-height: 2.8rem;
+        }
+    }
+
+    svg {
+      display: none;
     }
 
     > div {
@@ -25,13 +29,30 @@ export const HeaderStyled = styled.header`
       gap: 1rem;
     }
   }
+  @media(max-width: 1024px) {
+    .content {
+      max-width: 850px;
+    }
+  }
 
   @media(max-width: 425px) {
     .content {
       a {
-        margin-bottom: 3rem;
-      }
+        margin-bottom: 3.5rem;
 
+        img {
+          display: none;
+        }
+
+        svg {
+          display: initial;
+
+          width: 34px;
+          height: 34px;
+
+          color: var(--cyan-500);
+        }
+      }
       > div {
         display: flex;
         flex-direction: column-reverse;
