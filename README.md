@@ -10,7 +10,8 @@
     <img src="./src/assets/images/readme-images/nlw-new-room-mobile-image.png" width="200px">
     <img src="./src/assets/images/readme-images/nlw-room-mobile-image.png" width="200px">
     <img src="./src/assets/images/readme-images/nlw-admin-room-mobile-image.png" width="200px">
-    <img src="./src/assets/images/readme-images/nlw-delete-modal-mobile-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-delete-question-mobile-image.png" width="200px">
+    
 </h1>
 
 ## 🏷️ Sobre 
