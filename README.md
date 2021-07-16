@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="#sobre">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias-utilizadas">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-baixar">Como baixar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#obs">Obs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -15,12 +15,12 @@
     <img src="./src/assets/images/cover.svg">
 </h1>
 
-## 🏷️ Sobre 
+## Sobre 🏷️ 
 **Letmeask** é uma aplicação desenvolvida para facilitar a comunicação entre criadores de conteúdo e o seu público atravéz de salas de Q&A, uma forma mais organizada e democrática de fazer essa intermediação. O projeto foi desenvolvido durante a sexta edição do evento Next Level Week(**trilha React**), feito pela 🚀[Rocketseat](https://rocketseat.com.br/) e ministrado pelo professor [Diego Fernandes](https://github.com/diego3g).
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas 🛠️
 Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Letmeask** :
 
 - [React](https://reactjs.org/)
@@ -30,7 +30,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Letme
 
 ---
 
-## 🗂️ Como baixar e iniciar o projeto
+## Como baixar e iniciar o projeto 🗂️
 
 ```bash
 
@@ -54,7 +54,7 @@ Lembrando que será necessário criar uma conta no [Firebase](https://console.fi
 
 ---
 
-## 🏷️ Layout
+## Layout 🏷️
 Você pode visualizar o layout do projeto através do link abaixo:
 
 [layout](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate?node-id=0%3A1)
