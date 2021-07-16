@@ -1,18 +1,15 @@
-<p align="center">
-  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#como-baixar">Como baixar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#obs">Obs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
-
 <h1 align="center">
     <img src="./src/assets/images/logo.svg">
 </h1>
 
 
-<h1 align="center">
-    <img src="./src/assets/images/cover.svg">
+<h1 align="">
+    <img src="./src/assets/images/readme-images/nlw-home-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-mobile-home-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-signIn-mobile-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-room-mobile-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-admin-room-mobile-image.png" width="200px">
+    <img src="./src/assets/images/readme-images/nlw-delete-modal-mobile-image.png" width="200px">
 </h1>
 
 ## 🏷️ Sobre 
