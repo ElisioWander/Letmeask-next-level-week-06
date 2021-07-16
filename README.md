@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="#-sobre">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#--tecnologias-utilizadas">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-baixar">Como baixar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#obs">Obs</a>
+</p>
+
 <h1 align="center">
     <img src="./src/assets/images/logo.svg">
 </h1>
@@ -18,6 +26,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Letme
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Firebase](https://firebase.google.com/)
+- [StyledComponents](https://styled-components.com/)
 
 ---
 
@@ -51,6 +60,17 @@ Você pode visualizar o layout do projeto através do link abaixo:
 [layout](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate?node-id=0%3A1)
 
 Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/).
+
+---
+
+## Obs
+
+Afim de melhorar o projeto e desenvolver minhas habilidades como programador, eu tomei a iniciativa de fazer algumas alterações, corrigir pequenos bugs que eu observei, acrescentar algumas funcionalidades e criar a responsividade da aplicação. Algumas das modificações foram:
+
+- Cores do projeto e a organização delas fazendo a utilização de variáveis
+- Estilização feita com Styled-Components
+- Criação de modais utilizando a biblioteca React-Modal
+- Responsividade da aplicação
 
 ## Autor
 ### 👤 Elisio Wander
