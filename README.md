@@ -4,7 +4,7 @@
 
 
 <h1 align="">
-    <img src="./src/assets/images/readme-images/nlw-home-image.png" width="400px">
+    <img src="./src/assets/images/readme-images/nlw-home-image.png" width="800px">
     <img src="./src/assets/images/readme-images/nlw-mobile-home-image.png" width="200px">
     <img src="./src/assets/images/readme-images/nlw-signIn-mobile-image.png" width="200px">
     <img src="./src/assets/images/readme-images/nlw-room-mobile-image.png" width="200px">
